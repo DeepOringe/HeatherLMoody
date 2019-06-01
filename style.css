@@ -1,0 +1,262 @@
+/*~~~WAVY~~~*/
+:root{
+  font-size: 20px;
+  
+  --blue1: rgba(26, 36, 55, 1);
+	--blue2: rgba(43, 45, 66, 1);
+  --blue3: rgba(56, 78, 119, 1);	
+  --blue4: rgba(128, 155, 206, 1);
+  --mint: rgba(207, 252, 255, 1);
+  --orange: #d4aa7d;
+}
+
+
+*{
+	letter-spacing: 1;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+}
+
+h1{
+ 
+  font-size: calc(24px + 6vw);
+  font-weight:700;
+  text-align:center;
+  line-height: 1;
+}
+
+h2{
+  font-size: calc(22px + 3vw);
+  font-weight: 700;
+}
+
+h3{
+  font-size: calc(20px + .5vw);
+  font-weight: 700;
+}
+
+li{
+  padding: .5em 0 1em 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.inline{
+  display: flex;
+  align-items: baseline;
+}
+
+
+
+/* OPENER WAVES ANIMATIONS*/
+
+.big-name-drop{
+  position: relative;
+  z-index: -1;
+  padding-top: 1em;
+  margin-bottom: -.5em;
+  color: var(--orange);
+  animation-name: drop;
+  animation-duration: 1s;
+}
+
+@keyframes drop{
+  from {transform: translateY(-400px);}
+  to {transform: translateY(0);} 
+}
+
+
+.wave1{
+  fill: var(--blue1);
+}
+.wave2{
+  fill: var(--blue4);
+}
+
+.wave3{
+  fill: var(--blue2);
+}
+
+.wave4{
+  fill: var(--blue3);
+}
+
+.wave1, .wave2, .wave3{
+  position: relative;
+  z-index: 9;
+  animation-name: rollLeft;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rollLeft {
+  from {transform: translateX(-20px);}
+  to {transform: translateX(-0px);}
+}
+
+.wave4{
+  position: relative;
+  z-index: 9;
+  animation-name: rollRight;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rollRight {
+  from {transform: translateX(20px);}
+  to {transform: translateX(0);}
+}
+
+
+
+
+
+
+
+
+/* MAIN CONTENT AREA */
+
+.blue-body{
+  background: linear-gradient(var(--blue3), var(--blue2));
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.header{
+  margin: 2rem, 1rem 0, 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-parent{
+  box-sizing: border-box;
+  flex: 0 1 400px;
+  margin: 2em;
+}
+
+img{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 15px solid var(--blue1);
+  border-radius: 50%;  
+}
+
+.tagline{
+  z-index: 9;
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: calc(20px + 2vw);
+  text-shadow: 2px 2px var(--blue4); 
+  margin: 0 0 -2em -2em;
+}
+
+@media all and (max-width: 1500px) {
+  .tagline{
+    order: -1;
+    text-align: center;
+    margin: 0 0 -4em 0;
+  }
+}
+
+
+
+
+.contact, .objective, .experience, .qualifications, .education{
+  margin-bottom: 3rem;
+}
+
+.contact>div, .objective, .experience, .qualifications, .education, .footer>div{
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 1rem 0 1rem 0;
+}
+
+.objective, .experience, .qualifications, .education{
+  max-width: 800px;
+}
+
+.contact{
+  background: var(--orange);
+  border-bottom: 15px solid var(--blue1);
+}
+
+.contact>.contact-info{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media all and (max-width: 1500px) {
+  .contact>.contact-info{
+    flex-direction: column;
+  }
+}
+
+
+
+
+.contact-icon{
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 1em 0 0;
+}
+
+.contact .contact-icon{
+  fill: currentColor;
+}
+
+.inline:hover .contact-icon{
+  animation-name: wiggle;
+  animation-duration: .15s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle {
+  from {transform: translateX(-5px);}
+  to {transform: translateX(5px);}
+}
+ 
+
+
+
+
+.objective h3, .footer h3, .footer h2, .footer .contact-icon{
+  fill: var(--blue4);
+  color: var(--blue4);
+}
+
+.experience h2,.qualifications h2,.education h2{
+  /* background: linear-gradient(transparent 0% 70%, var(--blue2) 70% 90%, transparent 90% 100%); */
+  border-top: 15px solid var(--blue2);
+}
+
+.footer{
+  background: var(--blue1);
+  padding-top: 2em;
+  border-bottom: 15px solid var(--blue3);
+}
+
+
+
