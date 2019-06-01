@@ -141,7 +141,6 @@ a{
 .header{
   margin: 2rem, 1rem 0, 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -167,9 +166,13 @@ img{
   font-size: calc(20px + 2vw);
   text-shadow: 2px 2px var(--blue4); 
   margin: 0 0 -2em -2em;
+  padding: 1rem;
 }
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 600px) {
+  .header{
+    flex-wrap: wrap;
+  }
   .tagline{
     order: -1;
     text-align: center;
