@@ -211,7 +211,7 @@ img{
   border-bottom: 15px solid var(--blue1);
 }
 
-.contact>.contact-info{
+/* .contact>.contact-info{
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between;
@@ -222,12 +222,12 @@ img{
   .contact>.contact-info{
     flex-direction: column;
   }
-}
+} */
 
 .objective h3, .footer h3, .footer h2, .footer .contact-icon{
   fill: var(--blue4);
   color: var(--blue4);
-}
+} 
 
 .experience h2,.qualifications h2,.education h2{
   /* background: linear-gradient(transparent 0% 70%, var(--blue2) 70% 90%, transparent 90% 100%); */
