@@ -54,8 +54,6 @@ h4{
   }
 }
 
-
-
 li{
   padding: .5em 0 1em 0;
 }
@@ -136,10 +134,6 @@ a{
   from {transform: translateX(30px);}
   to {transform: translateX(0);}
 }
-
-
-
-
 
 
 
