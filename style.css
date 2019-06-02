@@ -24,7 +24,6 @@
 }
 
 h1{
- 
   font-size: calc(24px + 6vw);
   font-weight:700;
   text-align:center;
@@ -40,6 +39,19 @@ h3{
   font-size: calc(20px + .5vw);
   font-weight: 700;
 }
+
+@media all and (max-width: 600px) {
+  h3{
+    font-size: 18px;
+    font-weight: 400; 
+  }
+  h4{
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+
 
 li{
   padding: .5em 0 1em 0;
