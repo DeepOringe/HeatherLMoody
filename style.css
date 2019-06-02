@@ -196,7 +196,7 @@ img{
   margin-bottom: 3rem;
 }
 
-.contact>div, .objective, .experience, .qualifications, .education, .footer>div{
+.contact>ul, .objective, .experience, .qualifications, .education, .footer>ul{
   margin-left: 15%;
   margin-right: 15%;
   padding: 1rem 0 1rem 0;
@@ -209,6 +209,12 @@ img{
 .contact{
   background: var(--orange);
   border-bottom: 15px solid var(--blue1);
+}
+
+.footer{
+  background: var(--blue1);
+  padding-top: 2em;
+  border-bottom: 15px solid var(--blue3);
 }
 
 /* .contact>.contact-info{
@@ -234,11 +240,7 @@ img{
   border-top: 15px solid var(--blue2);
 }
 
-.footer{
-  background: var(--blue1);
-  padding-top: 2em;
-  border-bottom: 15px solid var(--blue3);
-}
+
 
 
 
