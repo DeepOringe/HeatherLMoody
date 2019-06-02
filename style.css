@@ -182,7 +182,7 @@ img{
   font-style: italic;
   font-size: calc(20px + 2vw);
   text-shadow: 2px 2px var(--blue4); 
-  margin: 0 0 -2em -4em;
+  margin: 0 0 -2em -3em;
   padding: 1rem;
 }
 
