@@ -145,9 +145,10 @@ span.yacht-name{
 
 
 
+/* HEADER SECTION */
 
 .header{
-  margin: 2rem, 1rem 0, 1rem;
+  margin: 1rem 0 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,8 +174,10 @@ img{
   font-style: italic;
   font-size: calc(20px + 2vw);
   text-shadow: 2px 2px var(--blue4); 
+  /*bump text over photo*/
   margin: 0 0 -2em -3em;
-  padding: 1rem;
+  /*2rem right padding to compensate for italic font*/
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 @media all and (max-width: 600px) {
