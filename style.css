@@ -69,7 +69,9 @@ a{
   display: flex;
   align-items: baseline;
 }
-
+.yacht-name{
+  font-style: italic;
+}
 
 
 /* OPENER WAVES ANIMATIONS*/
