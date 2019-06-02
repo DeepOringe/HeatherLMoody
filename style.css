@@ -108,12 +108,12 @@ a{
   animation-name: rollLeft;
   animation-duration: 2s;
   animation-direction: alternate;
-  animation-iteration-count: 5;
+  animation-iteration-count: 7;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes rollLeft {
-  from {transform: translateX(-20px);}
+  from {transform: translateX(-15px);}
   to {transform: translateX(-0px);}
 }
 
@@ -123,12 +123,12 @@ a{
   animation-name: rollRight;
   animation-duration: 2.5s;
   animation-direction: alternate;
-  animation-iteration-count: 5;
+  animation-iteration-count: 7;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes rollRight {
-  from {transform: translateX(20px);}
+  from {transform: translateX(30px);}
   to {transform: translateX(0);}
 }
 
