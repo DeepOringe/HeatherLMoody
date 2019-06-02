@@ -39,6 +39,9 @@ h3{
   font-size: calc(20px + .5vw);
   font-weight: 700;
 }
+h4{
+  color: var(--blue4);
+}
 
 @media all and (max-width: 600px) {
   h3{
@@ -226,6 +229,8 @@ img{
     flex-direction: column;
   }
 }
+
+
 
 
 
