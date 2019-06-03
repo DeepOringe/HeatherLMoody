@@ -176,8 +176,7 @@ img{
   text-shadow: 2px 2px var(--blue4); 
   /*bump text over photo*/
   margin: 0 0 -2em -3em;
-  /*2rem right padding to compensate for italic font*/
-  padding: 1rem 2rem 1rem 1rem;
+  padding: 1rem;
 }
 
 @media all and (max-width: 600px) {
