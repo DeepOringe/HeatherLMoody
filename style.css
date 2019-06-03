@@ -248,7 +248,7 @@ img{
 
 /* CONTACT ICONS */
 
-.contact h3{
+.contact h3, .footer h3{
   display: flex;
   align-items: baseline;
 }
