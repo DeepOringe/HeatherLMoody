@@ -248,21 +248,20 @@ img{
 
 /* CONTACT ICONS */
 
-.inline{
+.contact h3{
   display: flex;
   align-items: baseline;
 }
 
 .contact-icon{
-  width: 2em;
-  margin: 0 1em 0 0;
+margin-right: 1em;
 }
 
 .contact .contact-icon{
   fill: currentColor;
 }
 
-.inline:hover .contact-icon{
+.wiggle:hover .contact-icon{
   animation-name: wiggle;
   animation-duration: .15s;
   animation-direction: alternate;
