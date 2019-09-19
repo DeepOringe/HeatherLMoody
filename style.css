@@ -63,9 +63,25 @@ a{
   text-decoration: none;
 }
 
-.link-highlight{
+h4.link-highlight{
   display: inline-block;
   border-bottom: 5px solid var(--orange);
+}
+
+h4.link-highlight:hover{
+  animation-name: changeColor;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes changeColor{
+  from{
+    color: var(--blue4);
+  }
+  to{
+    color: var(--orange);
+  }
 }
 
 span.yacht-name{
@@ -177,7 +193,7 @@ img{
   font-family: 'Pacifico', cursive;
   font-style: italic;
   font-size: calc(20px + 2vw);
-  text-shadow: 2px 2px var(--blue4); 
+  
   /*bump text over photo*/
   margin: 0 0 -2em -3em;
   padding: 1rem;
